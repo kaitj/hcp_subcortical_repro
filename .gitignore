@@ -1,0 +1,10 @@
+# Directories
+data/
+db/
+misc/
+screenshots/
+figures/
+
+# Files
+*.tar
+*.ipynb_checkpoints
