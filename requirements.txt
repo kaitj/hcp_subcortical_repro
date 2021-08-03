@@ -1,0 +1,12 @@
+dill==0.3.1.1
+dipy==1.4.0
+fury==0.6.1
+joblib==0.11
+matplotlib==3.3.4
+nibabel==3.2.1
+numpy==1.19.2
+pandas==1.0.3
+pingouin==0.3.4
+scipy==1.4.1
+seaborn==0.11.0
+tqdm==4.56.0
