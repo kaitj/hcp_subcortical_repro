@@ -65,7 +65,8 @@ python -m venv <venv_dir>
 source <venv_dir>/bin/activate
 
 # This will install all the necessary libraries into the environment
-pip install -r requirements.txt
+# Difference between the two requirements is the matplotlib version (3.3.4 vs 3.4.3).
+pip install -r <requirements.txt/requirements_multipanel.txt>
 
 # Install jupyter and jupyter lab 
 pip install jupyter jupyterlab
