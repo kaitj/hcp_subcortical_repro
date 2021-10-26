@@ -4,6 +4,7 @@ db/
 misc/
 screenshots/
 figures/
+0_figures/
 
 # Files
 *.tar
