@@ -51,9 +51,19 @@ via Graham or have the associated commands within code cells to retrieve files f
 ## Environment
 
 If you are accessing the notebooks on a local copy or on `Graham` you will need to set up the 
-virtual environment to be able to run the code cells. It is recommended to set up a virtual 
-Python environment (preferably Python 3.7). You can use the following block of code to create
-the necessary virtual environment.
+virtual environment to be able to run the code cells. The easiest and recommended way to do this
+is via `poetry` (v1.2.0a2). You set up the environment with the following command:
+
+```
+poetry install --with analysis
+poetry run python -m ipykernel install --user --name=subcortical_py3
+```
+
+After installing the required libraries, fire up a Jupyter instance with the following command
+`poetry run jupyter lab`. Make sure you select the `subcuortical_py3` kernel installed!
+
+If you prefer to set up a virtual Python environment (preferably Python 3.7). 
+You can use the following block of code to create the necessary virtual environment.
 
 ```
 # Load Python module if on Graham / CBS
@@ -64,10 +74,22 @@ module load python/3.7
 python -m venv <venv_dir> 
 source <venv_dir>/bin/activate
 
-# This will install all the necessary libraries into the environment
-# Difference between the two requirements is the matplotlib version (3.3.4 vs 3.4.3).
-pip install -r <requirements.txt/requirements_multipanel.txt>
+# This will install all the necessary libraries into the environment.
+pip install -r <requirements.txt>
 
 # Install jupyter and jupyter lab 
 pip install jupyter jupyterlab
+python -m ipykernel install --user --name=subcortical_py3
 ```
+
+### Installation Notes
+If you are trying to create a multipanel figure to perform QC across subjects,
+`matplotlib` will need to be upgraded from `3.3.4` to `3.4.3` (this will break some functionality in
+analysis notebooks).
+
+If you are using Poetry, youc an edit version listed in `pyproject.toml` from `~3.3.4` to ~3.4.3`. 
+After updating, run `poetry update`. You can then run the JupyterLab as before.
+
+If you are using a virtual Python environment, it is easiest to create a new environment. Follow the
+instructions above, replacing `pip install -r requirements.txt` with 
+`pip install -r  requirements_multipanel.txt`
