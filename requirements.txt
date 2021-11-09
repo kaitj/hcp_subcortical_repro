@@ -3,6 +3,7 @@ dipy==1.4.0
 fury==0.6.1
 joblib==0.11
 matplotlib==3.3.4
+mne==0.24.0
 nibabel==3.2.1
 numpy==1.19.2
 pandas==1.0.3
