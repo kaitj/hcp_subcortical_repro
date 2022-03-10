@@ -87,7 +87,7 @@ If you are trying to create a multipanel figure to perform QC across subjects,
 `matplotlib` will need to be upgraded from `3.3.4` to `3.4.3` (this will break some functionality in
 analysis notebooks).
 
-If you are using Poetry, youc an edit version listed in `pyproject.toml` from `~3.3.4` to ~3.4.3`. 
+If you are using Poetry, you can edit version listed in `pyproject.toml` from `~3.3.4` to `~3.4.3`. 
 After updating, run `poetry update`. You can then run the JupyterLab as before.
 
 If you are using a virtual Python environment, it is easiest to create a new environment. Follow the
