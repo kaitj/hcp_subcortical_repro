@@ -5,7 +5,7 @@ description = "Repo for performing subcortico-subcortical tractography analysis"
 authors = ["Jason Kai <tkai@uwo.ca>"]
 
 [tool.poetry.dependencies]
-python = "~3.7"
+python = "~3.8"
 dill = "~0.3.1.1"
 dipy = "~1.4.0"
 fury = "~0.6.1"
