@@ -1,8 +1,8 @@
 # Subcortical Reproducibility
 
 This repository holds the Jupyter notebooks for assessing subcortical reproducibility.
-Within each notebook, there are related functions to load the files, process the data, create 
-figures and view tractography in 3D via `DIPY`.  All notebooks are linted with `Black` prior
+Within each notebook, there are related functions to load the files, process the data as necessary, 
+create figures and view tractography in 3D via `DIPY`.  All notebooks are linted with `Black` prior
 to saving. A full list of imported libraries can be found at the end of each notebook. 
 
 _Note: The embedded table of contents does not seem to work on Github or `jupyter lab` (which
@@ -11,6 +11,10 @@ has its own table of contents module). It does however work in `jupyter notebook
 Every time the notebooks are updated, this repository will also be updated! If the notebook cannot 
 be loaded on Git, you may need to try again in a bit. Unfortunately `nbviewer` does not work with 
 private repositories.
+
+## Data processing
+The data was oriignally processed with a pre-SnakeBIDS version of the [dbsc](https://github.com/kaitj/dbsc) 
+workflow. The SnakeBIDS version of this workflow is in development to make processing easier!
 
 ## Access the data
 
