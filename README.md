@@ -12,10 +12,6 @@ Every time the notebooks are updated, this repository will also be updated! If t
 be loaded on Git, you may need to try again in a bit. Unfortunately `nbviewer` does not work with 
 private repositories.
 
-## Data processing
-The data was oriignally processed with a pre-SnakeBIDS version of the [dbsc](https://github.com/kaitj/dbsc) 
-workflow. The SnakeBIDS version of this workflow is in development to make processing easier!
-
 ## Access the data
 
 The data is available on `Graham` (Compute Canada). If you wish to access the data directly, it is
