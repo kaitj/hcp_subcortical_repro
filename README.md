@@ -5,7 +5,8 @@ Within each notebook, there are related functions to load the files, process the
 create figures and view tractography in 3D via `DIPY`.  All notebooks are linted with `Black` prior
 to saving. A full list of imported libraries can be found at the end of each notebook. 
 
-_Note: The embedded table of contents does not seem to work on Github or `jupyter lab` (which
+
+_Note: The embedded table of contents does not work on Github or `jupyter lab` (which
 has its own table of contents module). It does however work in `jupyter notebook`_
 
 Every time the notebooks are updated, this repository will also be updated! If the notebook cannot 
@@ -13,40 +14,8 @@ be loaded on Git, you may need to try again in a bit.
 
 ## Access the data
 
-The minimally preprocessed data is made available from the Human Connectome Project, while the resulting 
-processed data is available on `Graham` (Compute Canada). If you wish to access the data directly, it is
-recommended to create a Python virtual environment and install the necessary dependencies
-(including `Jupyter`) via `pip`. To access the full repository, there are a few options.
-
-### 1. On Graham
-If you have a Compute Canada account, you can access the data directly after logging
-in. The data is stored at the following location: `/scratch/tkai/Zona`. If you do
-not have access to this directory, please contact **kaitj (tkai on Khanlab Slack)**.
-
-### 2. Local (`sshfs`)
-If you have Graham mounted locally, you should be able to access the data as well. You may need to
-a symlink to one of the directories you have mounts (`home` or `scratch`) or mount
-the data directly. Here is an example of the mounting command:
-
-```sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3,follow_symlinks <user>@graham.computecanada.ca:/scratch/tkai/Zona <Local mounting path>```
-
-### 3. CBS Server
-The data is also available via the CBS server. To access the data, follow similar instructions to 
-local access. Available to CBS is auto mounting of Graham, requiring only a symlink
-to the directory of interest. For full instructions, take a look at the CBS wiki:
-https://osf.io/k89fh/wiki/Computational%20Core%20Server/
-
-## File Formats
-
-There are a few file formats specific to the diffusion / tractography data to be aware of:
-* `tck` - this is a tractography file format for MRtrix and can be loaded via `DIPY` or `mrview`
-* `vtk` - this is a generic file format for 3D models and contain models for ROIs and tractography
-(can be loaded with `DIPY`, `Slicer`, `Paraview` or any program that can handle `vtk`)
-* `mif` - this is an imaging file format for `MRtrix` and can be loaded via `mrview`
-
-Lastly, due to the large number of files, much of the data has been stored within a tarball 
-archive. Any necessary data to view the Jupyter notebooks should already be available
-via Graham or have the associated commands within code cells to retrieve files from the archive.
+The minimally preprocessed data is made available from the Human Connectome Project. The processed will
+be made available through the Federated Research Data Repository (FRDR) - **link coming soon**! 
 
 ## Environment
 
@@ -60,7 +29,7 @@ poetry run python -m ipykernel install --user --name=subcortical_py3
 ```
 
 After installing the required libraries, fire up a Jupyter instance with the following command
-`poetry run jupyter lab`. Make sure you select the `subcuortical_py3` kernel installed!
+`poetry run jupyter lab`. Make sure you select the `subcortical_py3` kernel installed!
 
 If you prefer to set up a virtual Python environment (preferably Python 3.7). 
 You can use the following block of code to create the necessary virtual environment.
