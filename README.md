@@ -12,10 +12,16 @@ has its own table of contents module). It does however work in `jupyter notebook
 Every time the notebooks are updated, this repository will also be updated! If the notebook cannot 
 be loaded on Git, you may need to try again in a bit.
 
-## Access the data
+## Accessing the data
 
 The minimally preprocessed data is made available from the Human Connectome Project. The processed will
 be made available through the Federated Research Data Repository (FRDR) - **link coming soon**! 
+
+## Processing workflow
+
+The processing workflow is currently being developed into a [Snakebids](https://github.com/akhanf/snakebids/) 
+workflow for ease of use. Example scripts used for processing the original data can be found in the following
+repository: https://github.com/kaitj/dbsc
 
 ## Environment
 
