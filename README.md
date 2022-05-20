@@ -21,7 +21,7 @@ be made available through the Federated Research Data Repository (FRDR) - **link
 
 The processing workflow is currently being developed into a [Snakebids](https://github.com/akhanf/snakebids/) 
 workflow for ease of use. Example scripts used for processing the original data can be found in the following
-repository: https://github.com/kaitj/dbsc
+repository: https://github.com/kaitj/dbsc. Transformations can also be found in this repository.
 
 ## Environment
 
