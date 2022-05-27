@@ -5,6 +5,7 @@ misc/
 screenshots/
 figures/
 0_figures/
+notebooks/.restricted_data
 
 # Files
 *.tar
