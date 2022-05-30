@@ -1,9 +1,9 @@
-# Subcortical Reliability 
+# Subcortico-subcortical connectivity
 
-This repository holds the Jupyter notebooks for assessing subcortico-subcortical tractography reliability.
-Within each notebook, there are related functions to load the files, process the data as necessary, 
-create figures and view tractography in 3D via `DIPY`.  All notebooks are linted with `Black` prior
-to saving. A full list of imported libraries can be found at the end of each notebook. 
+This repository holds the Jupyter notebooks for assessing subcortico-subcortical connectivity identified
+via tractography. Within each notebook, there are related functions to load the files, process the data as 
+necessary, create figures and view tractography in 3D via `DIPY`.  All notebooks are linted with `Black` 
+prior to saving. A full list of imported libraries can be found at the end of each notebook. 
 
 
 _Note: The embedded table of contents does not work on Github or `jupyter lab` (which
@@ -57,7 +57,7 @@ pip install jupyter jupyterlab
 python -m ipykernel install --user --name=subcortical_py3
 ```
 
-### Installation Notes
+### Installation notes
 If you are trying to create a multipanel figure to perform QC across subjects,
 `matplotlib` will need to be upgraded from `3.3.4` to `3.4.3` (this will break some functionality in
 analysis notebooks).
