@@ -1,5 +1,7 @@
 # Subcortico-subcortical connectivity
 
+![](etc/ansa.png)
+
 This repository holds the Jupyter notebooks for assessing subcortico-subcortical connectivity identified
 via tractography. Within each notebook, there are related functions to load the files, process the data as 
 necessary, create figures and view tractography in 3D via `DIPY`.  All notebooks are linted with `Black` 
