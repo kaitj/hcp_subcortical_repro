@@ -1,4 +1,4 @@
-# Subcortico-subcortical connectivity
+# Subcortical Connectome 
 
 ![](etc/ansa.png)
 
