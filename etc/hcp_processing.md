@@ -2,7 +2,7 @@
 
 _Details of preprocessing performed as part of the HCP preprocessing pipeline can be found [here](https://www.sciencedirect.com/science/article/pii/S1053811913005053). For further information regarding the diffusion processing, see [Sotiropoulos et al. (2013)](https://www.sciencedirect.com/science/article/pii/S105381191300551X)._
 
-## BigBrain subcortical structures
+## BigBrain subcortical structures 
 
 Subcortical parcellations in MNI2009b space can be found in the following repository: https://osf.io/xkqb3/. 
 
@@ -12,7 +12,7 @@ Subcortical parcellations in MNI2009b space can be found in the following reposi
 
 1. The transformed parcellations were binarized, and the brain stem (also binarized) was added using `fslmaths`. This mask is later used to to create a convex hull.
 
-## Freesurfer
+## Freesurfer ([Example Scripts](https://github.com/kaitj/dbsc/tree/main/dbsc/resources/example_scripts/freesurfer))
 
 Freesurfer (v7.1) is used to perform parcellation of the thalamus. 
 
@@ -22,7 +22,7 @@ _Standard Freesurfer processing is already performed as part of the HCP pipeline
 
 1. The thalamus parcellations were converted from `.mgz` to `.nii.gz` using `mri_convert`, and transformed to MNI162NLin6Asym space using `antsApplyTransforms` with **MultiLabel** interpolation.
 
-## Updating subcortical structures
+## Updating subcortical structures ([Example scripts](https://github.com/kaitj/dbsc/tree/main/dbsc/resources/example_scripts/zona_bb_subcortex))
 
 Thalamus structure (whole label) was replaced with the parcellated version of the thalamus. Label updating was performed using `fslmaths`
 
@@ -34,7 +34,7 @@ Thalamus structure (whole label) was replaced with the parcellated version of th
 
 1. A convex hull is created from the binarized mask and inverted to be used as an exclusion mask later on.
 
-## Tractography processing
+## Tractography processing ([Example scripts](https://github.com/kaitj/dbsc/tree/main/dbsc/resources/example_scripts/mrtpipelines))
 
 _Processing is performed using Mrtrix3 (v3.0_RC3). All `.nii.gz` files are converted to `.mif` files (Mrtrix3 extension) during this process._
 
