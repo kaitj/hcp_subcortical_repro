@@ -16,14 +16,16 @@ be loaded on Git, you may need to try again in a bit.
 
 ## Accessing the data
 
-The minimally preprocessed data is made available from the Human Connectome Project. The processed will
+The minimally preprocessed data is made available from the Human Connectome Project. The processed data will
 be made available through the Federated Research Data Repository (FRDR) - **link coming soon**! 
 
 ## Processing workflow
 
 The processing workflow is currently being developed into a [Snakebids](https://github.com/akhanf/snakebids/) 
 workflow for ease of use. Example scripts used for processing the original data can be found in the following
-repository: https://github.com/kaitj/dbsc. Transformations can also be found in this repository.
+repository: https://github.com/kaitj/dbsc. Transformations can also be found in this repository. 
+
+A summary of the processing performed for the present study can be found [here](etc/hcp_processing.md).
 
 ## Environment
 
