@@ -12,7 +12,7 @@ Subcortical parcellations in MNI2009b space can be found in the following reposi
 
 1. The transformed parcellations were binarized, and the brain stem (also binarized) was added using `fslmaths`. This mask is later used to to create a convex hull.
 
-## Freesurfer ([Example Scripts](https://github.com/kaitj/dbsc/tree/main/dbsc/resources/example_scripts/freesurfer))
+## Freesurfer ([Scripts](https://github.com/kaitj/dbsc/tree/main/dbsc/resources/example_scripts/freesurfer))
 
 Freesurfer (v7.1) is used to perform parcellation of the thalamus. 
 
@@ -22,7 +22,7 @@ _Standard Freesurfer processing is already performed as part of the HCP pipeline
 
 1. The thalamus parcellations were converted from `.mgz` to `.nii.gz` using `mri_convert`, and transformed to MNI162NLin6Asym space using `antsApplyTransforms` with **MultiLabel** interpolation.
 
-## Updating subcortical structures ([Example scripts](https://github.com/kaitj/dbsc/tree/main/dbsc/resources/example_scripts/zona_bb_subcortex))
+## Updating subcortical structures ([Scripts](https://github.com/kaitj/dbsc/tree/main/dbsc/resources/example_scripts/zona_bb_subcortex))
 
 Thalamus structure (whole label) was replaced with the parcellated version of the thalamus. Label updating was performed using `fslmaths`
 
@@ -34,7 +34,7 @@ Thalamus structure (whole label) was replaced with the parcellated version of th
 
 1. A convex hull is created from the binarized mask and inverted to be used as an exclusion mask later on.
 
-## Tractography processing ([Example scripts](https://github.com/kaitj/dbsc/tree/main/dbsc/resources/example_scripts/mrtpipelines))
+## Tractography processing ([Scripts](https://github.com/kaitj/dbsc/tree/main/dbsc/resources/example_scripts/mrtpipelines))
 
 _Processing is performed using Mrtrix3 (v3.0_RC3). All `.nii.gz` files are converted to `.mif` files (Mrtrix3 extension) during this process._
 
